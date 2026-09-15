@@ -114,7 +114,7 @@ class GitHubRateLimiter:
 
 def parse_github_url(url: str) -> dict:
     """Take a GitHub repo URL and return the owner/repo fields."""
-    match = GH_URL_PATTERN.search(url.strip())
+       match = GH_URL_PATTERN.search(url.strip())
     if match:
         repo = match.groupdict()
         return {"owner": repo["owner"], "name": repo["name"]}

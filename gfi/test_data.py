@@ -5,8 +5,7 @@ import os
 import unittest
 from collections import Counter
 
-import toml
-from gfi.populate import parse_github_url
+import toml from gfi.populate import parse_github_url
 
 DATA_FILE_PATH = "data/repositories.toml"
 LABELS_FILE_PATH = "data/labels.json"
